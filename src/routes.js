@@ -1,4 +1,4 @@
-import pantallas from 'pantallas/routes';
+import pantallas from 'pages/routes';
 
 const routes = [
   { route: ['', 'welcome'], name: 'welcome', moduleId: 'welcome', nav: true, title: 'Inicio' },
