@@ -4,7 +4,7 @@ import routes from './routes';
 
 export class App {
   constructor() {
-    this.title = 'ormasoft';
+    this.title = 'Ormasoft';
   }
   
   configureRouter(config, router) {
