@@ -5,7 +5,7 @@ export class ContactFormCustomElement {
         this.message
     }
 
-    sendMessage() {
+    hello() {
         console.log("test")
     }
 }
