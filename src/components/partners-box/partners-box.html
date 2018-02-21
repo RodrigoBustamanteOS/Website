@@ -1,29 +1,21 @@
-<template>
-  
-    <h2 style="text-align: left;">Los socios de <strong>XMS Technologies </strong>y<strong> XMS Business Solutions</strong> son:</h2>
-    <p>&nbsp;</p>
-  <div class="g-cols offset_default">
-    <div class="one-quarter"> <img  src="https://alfatecsistemas.es/wp-content/uploads/2014/12/Personal-Brand.jpg" alt="" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px"> </div>
-    <div class="three-quarters">
-    <h3><span style="color: #b2169c;">${name} <strong>Chuy-Kan</strong></span></h3>
-    <p style="text-align: justify;">Tomás es Arquitecto SQL Server con mayor experiencia en Chile, quien fue durante 15 años el responsable técnico en Microsoft Chile y sus partners de todas las versiones de SQL Server partiendo desde la versión 4. Tomás lleva a cuestas varios cientos de proyectos de BI, DW, Upgrades, Mirror, reportería, etc.<br>
-    </p></div>
-  </div>
-  <hr>
-  <div class="g-cols offset_default">
-    <div class="one-quarter"> <img  src="https://alfatecsistemas.es/wp-content/uploads/2014/12/Personal-Brand.jpg" alt="" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px"> </div>
-    <div class="three-quarters">
-    <h3><span style="color: #b2169c;">Tomás <strong>Chuy-Kan</strong></span></h3>
-    <p style="text-align: justify;">Tomás es Arquitecto SQL Server con mayor experiencia en Chile, quien fue durante 15 años el responsable técnico en Microsoft Chile y sus partners de todas las versiones de SQL Server partiendo desde la versión 4. Tomás lleva a cuestas varios cientos de proyectos de BI, DW, Upgrades, Mirror, reportería, etc.<br>
-    </p></div>
-  </div>
-  <hr>
-  <div class="g-cols offset_default">
-    <div class="one-quarter"> <img  src="https://alfatecsistemas.es/wp-content/uploads/2014/12/Personal-Brand.jpg" alt="" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px"> </div>
-    <div class="three-quarters">
-    <h3><span style="color: #b2169c;">Tomás <strong>Chuy-Kan</strong></span></h3>
-    <p style="text-align: justify;">Tomás es Arquitecto SQL Server con mayor experiencia en Chile, quien fue durante 15 años el responsable técnico en Microsoft Chile y sus partners de todas las versiones de SQL Server partiendo desde la versión 4. Tomás lleva a cuestas varios cientos de proyectos de BI, DW, Upgrades, Mirror, reportería, etc.<br>
-    </p></div>
-  </div>
-  <button type="button"><slot></slot></button>
+<template>  
+    <div class="container">
+        <div repeat.for="item of info">
+            <div class="col-md-4">
+                <img  src="${item.image}" alt="${item.image}" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px">
+            </div>
+            <div class="col-md-8">
+                <h3>
+                    <span style="color: #b2169c;">
+                        <strong>${item.name}</strong>
+                    </span>
+                </h3>
+                <p style="text-align: justify;">
+                    ${item.description}
+                    <br>
+                </p>
+            </div>
+            <hr>
+        </div>
+    </div>
 </template>
