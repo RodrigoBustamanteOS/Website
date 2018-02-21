@@ -1,0 +1,15 @@
+.splash {
+    text-align: center;
+    margin: 10% 0 0 0;
+    box-sizing: border-box;
+}
+
+.page-host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 25px;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
