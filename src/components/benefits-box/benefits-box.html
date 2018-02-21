@@ -1,0 +1,35 @@
+<template>
+    <!-- <require from="./medium-box.css"></require> -->
+    <!-- <link rel="stylesheet" href="medium-box.css" type="text/css"> -->
+    <style>
+        #mediumBoxCont {
+            background-color: #DCDCDC;
+            width: 400px;
+            height: 500px;
+        }
+        #imageMD {
+            text-align: center;
+            width: 100%;
+            height: 200px;
+        }
+        #titMD {
+            margin: 8px;
+        }
+        #descripMD {
+            margin: 16px 8px;
+        }
+        #buttonMD {
+            margin: 8px;
+            color: #fff;
+            background-color: #f23630;
+        }
+    </style>
+    <section id="mediumBoxCont">
+        <!-- ../img/logo-ormasoft-grande.png  -->
+        <img id="imageMD" src="http://webxms2.azurewebsites.net/wp-content/uploads/2015/05/negocios11.jpg">
+        <h3 id="titMD">La estabilización y desarrollo de la plataforma Microsoft ha logrado mejorar la ejecución de los procesos críticos del Ministerio de Educación</h3>
+        <p id="descripMD">La primera tarea que enfrentó el área de TI frente al escenario descrito, fue generar una nueva visión y alcance que permitiera…</p>
+        <button class="btn btn-default" id="buttonMD" type="button"><slot></slot></button>
+    </section>
+    
+</template>
