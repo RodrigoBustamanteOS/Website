@@ -1,5 +1,5 @@
 import {bindable, bindingMode} from 'aurelia-framework';
-export class MediumBoxCustomElement {
+export class BenefitsBoxCustomElement {
     constructor() {
         
     }
