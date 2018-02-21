@@ -1,0 +1,22 @@
+<template>
+  <!-- <require from="./contact-form.css" as="scoped"></require> -->
+  <div class="col-md-6">
+    <form submit.trigger="sendMessage()">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input class="form-control" value.bind="name" type="text">
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input class="form-control" value.bind="email" type="email">
+      </div>
+      <div class="form-group">
+        <label>Mensaje</label>
+        <textarea value.bind="message" cols="30" rows="10" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <button id="black" type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+      </div>
+    </form>
+  </div>
+</template>
