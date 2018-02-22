@@ -1,4 +1,4 @@
-export class PartnersBoxCustomElement{
+export class PartnersBox{
 
   constructor(){
     this.info = [
