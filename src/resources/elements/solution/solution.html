@@ -1,61 +1,63 @@
 <template>
     <style>
         .margin-bottom {
-    margin-bottom: 40px;
-}
-.containerSolution {
-    width: 1170px;
-    clear: both;
-    width: 1170px;
-    clear: both;
-    margin: auto;
-    width: 86%;
-    padding: 5px;
-}
-    .content-box.box-default {
-    background-color: #f6f6f6;
-    border: solid 1px #e5e5e5;
-    height: 300px;
-}
+            margin-bottom: 40px;
+        }
 
-.content-box {
-    display: block;
-    text-align: center;
-    overflow: hidden;
-    padding: 15px;
-    margin-bottom: 5px;
-}    
+        .containerSolution {
+            width: 1170px;
+            clear: both;
+            width: 1170px;
+            clear: both;
+            margin: auto;
+            width: 86%;
+            padding: 5px;
+        }
 
-.col-md-3{
-    width: 24%;
-    float: left;
-}
- h4{
-    font-family: "Lato",sans-serif;
-    font-weight: 300;
-    line-height: 120%;
-    color: #0D7DBC;
-    margin: 20px 0 17px 0;
- }
+        .content-box.box-default {
+            background-color: #f6f6f6;
+            border: solid 1px #e5e5e5;
+            height: 300px;
+        }
 
- p {
-    margin: 0 0 10px;
-}
+        .content-box {
+            display: block;
+            text-align: center;
+            overflow: hidden;
+            padding: 15px;
+            margin-bottom: 5px;
+        }
 
+        .col-md-3 {
+            width: 24%;
+            float: left;
+        }
+
+        h4 {
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            line-height: 120%;
+            color: #0D7DBC;
+            margin: 20px 0 17px 0;
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
     </style>
-        <section class="margin-bottom">
-				<div class="containerSolution">
-                       
-				   <div repeat.for="item of solution">
-					  <div class="col-md-3 col-sm-6">
-						 <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 300px">
-							<img src="${item.image}"  class="img-responsive center-block"> 
-							<h4 class="content-box-title">${item.title}</h4>
-							<p>${item.description}</p>
-						 </div>
-					  </div>
-                   </div>
-                   
-				</div>
-			 </section>
+    <section class="margin-bottom">
+        <div class="containerSolution">
+
+            <div repeat.for="item of solution">
+                <div class="col-md-3 col-sm-6">
+                    <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 300px">
+                        <img src="${item.image}" class="img-responsive center-block">
+                        <h4 class="content-box-title">${item.title}</h4>
+                        <p>${item.description}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </template>
