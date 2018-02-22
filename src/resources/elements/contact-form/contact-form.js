@@ -1,4 +1,4 @@
-export class ContactFormCustomElement {
+export class ContactForm {
     constructor() {
         this.name;
         this.email
