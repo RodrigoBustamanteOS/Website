@@ -5,5 +5,8 @@ export function configure(config) {
     './elements/slider/slider',
     './elements/partners-box/partners-box',
     './elements/benefits-box/benefits-box',
+    './elements/solution/solution',
+    './elements/change/change',
+    './elements/client/client',
   );
 }
