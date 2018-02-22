@@ -1,48 +1,21 @@
-<template>
-  
-  <div class="l-main" style="margin-bottom: 69px;">
-    <section class="l-section">
-      <div class="l-section-h g-html i-cf" style="padding:0 0; ">
-        <p style="text-align: left;"></p><div class="g-hr type_invisible size_big no_icon">
-                <span class="g-hr-h">
-                  <i class="fa fa-"></i>
-                </span>
-              </div>
-    <h2 style="text-align: left;">Los socios de <strong>XMS Technologies </strong>y<strong> XMS Business Solutions</strong> son:</h2>
-    <p>&nbsp;</p>
-    <div class="g-cols offset_default">
-    <div class="one-quarter"> <img class="wp-image-3723 size-medium alignleft" src="https://alfatecsistemas.es/wp-content/uploads/2014/12/Personal-Brand.jpg" alt="" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px"> </div>
-    <div class="three-quarters">
-    <h3><span style="color: #b2169c;">Tomás <strong>Chuy-Kan</strong></span></h3>
-    <p style="text-align: justify;">Tomás es Arquitecto SQL Server con mayor experiencia en Chile, quien fue durante 15 años el responsable técnico en Microsoft Chile y sus partners de todas las versiones de SQL Server partiendo desde la versión 4. Tomás lleva a cuestas varios cientos de proyectos de BI, DW, Upgrades, Mirror, reportería, etc.<br>
-    </p></div>
+<template>  
+    <div class="container">
+        <div repeat.for="item of info">
+            <div class="col-md-4">
+                <img  src="${item.image}" alt="${item.image}" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px">
+            </div>
+            <div class="col-md-8">
+                <h3>
+                    <span style="color: #b2169c;">
+                        <strong>${item.name}</strong>
+                    </span>
+                </h3>
+                <p style="text-align: justify;">
+                    ${item.description}
+                    <br>
+                </p>
+            </div>
+            <hr>
+        </div>
     </div>
-    <div class="g-hr size_medium no_icon">
-                <span class="g-hr-h">
-                  <i class="fa fa-"></i>
-                </span>
-              </div>
-    <div class="g-cols offset_default">
-    <div class="one-quarter"> <img class="wp-image-3722 size-medium alignleft" src="https://alfatecsistemas.es/wp-content/uploads/2014/12/Personal-Brand.jpg" alt="" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px"> </div>
-    <div class="three-quarters">
-    <h3><span style="color: #0062af;">Hugo <strong>Mora</strong></span></h3>
-    <p style="text-align: justify;">Hugo es Arquitecto CRM Dynamics con una alta experiencia en Chile y Latinoamérica. Durante Microsoft Latinoamérica fue el responsable técnico de CRM Dynamics para los clientes en los países de la región. Le ha tocado participar en el desarrollo de los proyectos más grandes y complejos de CRM.<br>
-    </p></div>
-    </div>
-    <div class="g-hr size_medium no_icon">
-                <span class="g-hr-h">
-                  <i class="fa fa-"></i>
-                </span>
-              </div>
-    
-    <p style="text-align: justify;"></p><div class="g-hr type_invisible size_big no_icon">
-                <span class="g-hr-h">
-                  <i class="fa fa-"></i>
-                </span>
-              </div>
-    <p>&nbsp;</p>
-      </div>
-    </section>
-    </div>
-  <button type="button"><slot></slot></button>
 </template>

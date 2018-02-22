@@ -1,5 +1,5 @@
-export class test{
+export class SliderCustomElement{
     constructor(){
-        
+
     }
 }

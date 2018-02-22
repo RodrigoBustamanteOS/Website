@@ -1,14 +1,11 @@
 export class PartnersBoxCustomElement{
 
-  constructor(name, description){
-    this.informacion = [];
-    this.name = '';
-    this.description = '';
-  }
-
-  info(){
-      
-
+  constructor(){
+    this.info = [
+      { name: 'Rodrigo', image: 'https://alfatecsistemas.es/wp-content/uploads/2014/12/Personal-Brand.jpg', description: 'Tiene 22 años'},
+      { name: 'Rodrigo', image: 'https://alfatecsistemas.es/wp-content/uploads/2014/12/Personal-Brand.jpg', description: 'Tiene 22 años'},
+      { name: 'Rodrigo', image: 'https://alfatecsistemas.es/wp-content/uploads/2014/12/Personal-Brand.jpg', description: 'Tiene 22 años'}
+    ]
   }
 }
 
