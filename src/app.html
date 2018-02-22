@@ -1,144 +1,48 @@
 <template>
-  <style>
+
+  <body id="theBody">
     
-#footer-widgets {
-    background-color: #444;
-    color: #eee;
-    padding: 0 0 20px 0;
-    margin-top: 30px;
-    border-top: solid 1px #ccc;
-    box-shadow: 0 0 1px rgba(0,0,0,0.3);
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.container {
-    width: 1170px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-   
-}
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-
-.footer-widget-title {
-    font-family: 'Lato',sans-serif;
-    font-size: 1.6em;
-    color: #0eb7ff;
-}
-
-
-
-.col-md-4 {
-    width: 33.33333333%;
-    
-}
-
-
-.three_cols {
-    overflow: hidden;
-}
-
-.three_cols>li {
-    float: left;
-    width: 33.333%;
-    padding-bottom: 2px;
-    padding-top: 1px;
-}
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
-}
-
-#footer-widgets a {
-    color: #eee;
-    text-decoration: none;
-}
-
-aside, footer{
-    display: block;
-}
-
-ul, ol {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-#footer {
-    background-color: #333;
-    color: #ccc;
-    padding: 17px 0;
-    text-align: center;
-    border-top: solid 1px #555;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-
-
-#footer p {
-    margin: 0;
-    padding: 0;
-    line-height: 100%;
-}
-
-#footer a {
-    color: #0099da;
-    text-decoration: none;
-}
-
-a {
-    background: transparent;
-}
-
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-
-    </style>
   <require from="resources/elements/loading-indicator"></require>  
-  <loading-indicator loading.bind="router.isNavigating"></loading-indicator>
   <require from="nav-bar"></require>
+
+  <loading-indicator loading.bind="router.isNavigating"></loading-indicator>
   <nav-bar router.bind="router"></nav-bar>
   <div class="page-host">
-    <router-view></router-view>
-    <footer id="footer-widgets">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-6">
-               <h3 class="footer-widget-title">Mapa del sitio</h3>
-               <ul class="list-unstyled three_cols">
-                  <li> <a href="inicio.html">Inicio</a> </li>
-                  <li> <a href="clientes.html">Clientes</a> </li>
-                  <li> <a href="proyectos.html">Proyectos</a> </li>
-                  <li> <a href="servicios.html">Servicios</a> </li>
-                  <li> <a href="nosotros.html">Nosotros</a> </li>
-                  <li> <a href="contacto.html">Contacto</a> </li>
-               </ul>
+    
+      <router-view></router-view>
+      <footer>
+          <div id="footer-widgets">
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                      <h3 class="footer-widget-title">Mapa del sitio</h3>
+                      <ul class="list-unstyled three_cols">
+                          <li> <a href="inicio.html">Inicio</a> </li>
+                          <li> <a href="clientes.html">Clientes</a> </li>
+                          <li> <a href="proyectos.html">Proyectos</a> </li>
+                          <li> <a href="servicios.html">Servicios</a> </li>
+                          <li> <a href="nosotros.html">Nosotros</a> </li>
+                          <li> <a href="contacto.html">Contacto</a> </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="footer-widget-title">Información de la Empresa</h3>
+                      <ul class="list-unstyled three_cols">
+                          <a>cel: +56 (9) 9 779 5254 </a> </br>
+                        <a>dirección: Simón Bolívar 1840</a> </br>
+                        <a>Ñuñoa - Santiago - Chile</a> 
+                      </ul>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6">
-              <h3 class="footer-widget-title">Información de la Empresa</h3>
-              <ul class="list-unstyled three_cols">
-                  <a>cel: +56 (9) 9 779 5254 </a> </br>
-                <a>dirección: Simón Bolívar 1840</a> </br>
-                <a>Ñuñoa - Santiago - Chile</a> 
-              </ul>
-            </div>
-         </div>
-      </div>
-    </footer>
-    <footer id="footer"> <p>© 2017  <a href="#"> Ormasoft</a> </p></footer>
+            <div id="theFooter"> <p>© 2017  <a href="#"> Ormasoft</a> </p></div>
+      </footer>
+      
+    
   </div>
+  </body>
+
   
 </template>
