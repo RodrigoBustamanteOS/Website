@@ -1,3 +1,8 @@
+#theBody {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
 .splash {
     text-align: center;
     margin: 10% 0 0 0;
@@ -21,10 +26,8 @@
     margin-top: 30px;
     border-top: solid 1px #ccc;
     box-shadow: 0 0 1px rgba(0,0,0,0.3);
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    bottom:0;
+    width:100%;
 }
 .container {
     width: 1170px;
@@ -84,27 +87,25 @@ ul, ol {
     margin-bottom: 10px;
 }
 
-#footer {
+#theFooter {
     background-color: #333;
     color: #ccc;
     padding: 17px 0;
     text-align: center;
     border-top: solid 1px #555;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    bottom:0;
+    width:100%;
 }
 
 
 
-#footer p {
+#theFooter p {
     margin: 0;
     padding: 0;
     line-height: 100%;
 }
 
-#footer a {
+#theFooter a {
     color: #0099da;
     text-decoration: none;
 }
