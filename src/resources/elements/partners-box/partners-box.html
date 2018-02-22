@@ -1,21 +1,23 @@
 <template>  
-    <div class="container">
-        <div repeat.for="item of info">
-            <div class="col-md-4">
-                <img  src="${item.image}" alt="${item.image}" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px">
-            </div>
-            <div class="col-md-8">
-                <h3>
-                    <span style="color: #b2169c;">
-                        <strong>${item.name}</strong>
-                    </span>
-                </h3>
-                <p style="text-align: justify;">
-                    ${item.description}
-                    <br>
-                </p>
+    <div class="">
+        <ul repeat.for="item of info">
+            <div class="row">
+                <div class="col-md-3">
+                    <img  src="${item.image}" alt="${item.image}" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px">
+                </div>
+                <div class="col-md-8 offset-md-1">
+                    <h3>
+                        <span style="color: #b2169c;">
+                            <strong>${item.name}</strong>
+                        </span>
+                    </h3>
+                    <p style="text-align: justify;">
+                        ${item.description}
+                    </p>
+                </div>
+
             </div>
             <hr>
-        </div>
+        </ul>
     </div>
 </template>

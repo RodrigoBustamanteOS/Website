@@ -1,6 +1,8 @@
 export class Slider{
     constructor(){
-        $('.carousel').carousel()
-
+        $('.carousel').carousel({
+            interval: 2000,
+            cycle: true
+        });
     }
 }
