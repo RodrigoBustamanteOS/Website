@@ -21,6 +21,10 @@
     margin-top: 30px;
     border-top: solid 1px #ccc;
     box-shadow: 0 0 1px rgba(0,0,0,0.3);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 .container {
     width: 1170px;
@@ -86,6 +90,10 @@ ul, ol {
     padding: 17px 0;
     text-align: center;
     border-top: solid 1px #555;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 
