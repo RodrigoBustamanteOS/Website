@@ -12,7 +12,7 @@ export class App {
     config.addPipelineStep('modelbind', RouterStep);
     config.addPipelineStep('postcomplete', PostCompleteStep);
     config.map(routes);
-    console.log(routes);
+    // console.log(routes);
     this.router = router;
   }
 }
