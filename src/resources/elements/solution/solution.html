@@ -1,19 +1,5 @@
 <template>
     <style>
-        .margin-bottom {
-            margin-bottom: 40px;
-        }
-
-        .containerSolution {
-            width: 1170px;
-            clear: both;
-            width: 1170px;
-            clear: both;
-            margin: auto;
-            width: 86%;
-            padding: 5px;
-        }
-
         .content-box.box-default {
             background-color: #f6f6f6;
             border: solid 1px #e5e5e5;
@@ -28,10 +14,6 @@
             margin-bottom: 5px;
         }
 
-        .col-md-3 {
-            width: 24%;
-            float: left;
-        }
 
         h4 {
             font-family: "Lato", sans-serif;
@@ -44,20 +26,24 @@
         p {
             margin: 0 0 10px;
         }
-    </style>
-    <section class="margin-bottom">
-        <div class="containerSolution">
 
-            <div repeat.for="item of solution">
-                <div class="col-md-3 col-sm-6">
-                    <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 300px">
-                        <img src="${item.image}" class="img-responsive center-block">
-                        <h4 class="content-box-title">${item.title}</h4>
-                        <p>${item.description}</p>
-                    </div>
+        .contSol {
+            width: 300px;
+            float: left;
+            padding: 20px;
+            border: 0px solid rgba(0, 0, 0, 0.125);
+        }
+    </style>
+    <div class="contSolut">
+
+        <div repeat.for="item of solution">
+            <div class="card contSol">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 300px">
+                    <img src="${item.image}" class="img-responsive center-block">
+                    <h4 class="content-box-title">${item.title}</h4>
+                    <p>${item.description}</p>
                 </div>
             </div>
-
         </div>
-    </section>
+    </div>
 </template>
