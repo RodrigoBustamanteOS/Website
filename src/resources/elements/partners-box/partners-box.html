@@ -1,8 +1,8 @@
 <template>
     <ul repeat.for="person of people">
-        <div class="media">
-            <img class="align-self-center mr-3" src="${person.image}" alt="${person.image}" width="300" height="200" sizes="(max-width: 300px) 100vw, 300px">
-            <div class="media-body">
+        <div class="media row">
+            <img class="align-self-center mr-3 col-sm col-md col-xs" src="${person.image}" alt="${person.image}"  width="300" height="200" sizes="(max-width: 300px) 100vw, 300px">
+            <div class="media-body col-sm col-md col-xs">
                 <h3 class="mt-0">${person.name}</h3>
                 <p class="mb-0">${person.description}</p>
             </div>
