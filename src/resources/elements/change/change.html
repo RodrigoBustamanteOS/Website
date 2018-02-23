@@ -1,28 +1,13 @@
 <template>
     <style>
-        .section-lines {
-            border-top: solid 1px #ddd;
-            border-bottom: solid 1px #ddd;
-            margin-bottom: 40px;
+       
+
+         #fondo{
             background-color: #f9f9f9;
-            margin-top: 300px;
         }
+      
 
-        .containerChange {
-            width: 1170px;
-            display: table-row-group;
-        }
-
-        .col-md-4 {
-            width: 33.33333333%;
-        }
-
-        .home-devices {
-            padding-top: 82px;
-            float: left;
-            margin-left: 212px;
-            padding-left: 175px;
-        }
+       
 
         h3 {
             font-family: "Lato", sans-serif;
@@ -33,60 +18,37 @@
 
         }
 
-        .icon-devices {
-            margin: 30px 0 20px 0;
-            font-size: 3em;
-            text-align: center;
-            padding: 0;
-        }
+      
 
-        .icon-devices li {
-            list-style-type: none;
-            list-style-position: outside;
-            display: inline-block;
-        }
+       
 
-        .icon-devices li.active a {
-            color: #0099da;
-        }
-
-        .col-md-8 {
-            width: 66.66666667%;
-            float: left;
-        }
-
-        .img-responsiveDS {
-            display: block;
-            width: 100% \9;
-            max-width: 100%;
-            height: auto;
-        }
-
-        #desktop {
-            padding-left: 200px;
-        }
+        
+ 
+       
+       
     </style>
-    <section class="section-lines">
-        <div class="containerChange">
-
-            <div class="col-12">
-                <div class="home-devices">
-                    <h3>Aceptamos el desafío</h3>
-                    <p>Nuestro desafío es encontrar soluciones tecnológicas, que le permitan a nuestro cliente un desarrollo
-                        óptimo y diferenciador de su negocio, promoviendo un proceso de integración y perfeccionamiento de
-                        sistemas en el ámbito empresarial.</p>
-                    <p>Entregamos soluciones para la gama de dispositivos disponibles en el mercado, habilitando la incorporación
-                        de la movilidad y el Cloud Computing.</p>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="tab-content">
-                    <div class="tab-pane active" id="desktop">
-                        <img src="http://www.merchise.cl/img/mac.png" alt="" class="img-responsiveDS"> </div>
-
-                </div>
-            </div>
-
-        </div>
+    <section class="container-fluid" id="fondo">
+    
+            <div class="row">
+                    <div class="col-sm-6"∫>
+                        <div style="max-width: 100%;">
+                            <h3>Aceptamos el desafío</h3>
+                            <p>Nuestro desafío es encontrar soluciones tecnológicas, que le permitan a nuestro cliente un desarrollo
+                                óptimo y diferenciador de su negocio, promoviendo un proceso de integración y perfeccionamiento de
+                                sistemas en el ámbito empresarial.</p>
+                            <p>Entregamos soluciones para la gama de dispositivos disponibles en el mercado, habilitando la incorporación
+                                de la movilidad y el Cloud Computing.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div style="max-width: 100%;">
+                            <img src="http://www.merchise.cl/img/mac.png" class="img-fluid"> 
+                      </div>
+                    </div>
+                  </div>
+         
+        
     </section>
+
+  
 </template>
