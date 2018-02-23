@@ -19,7 +19,7 @@
     overflow-y: auto;
 }
 
-#footer-widgets {
+#footer {
     background-color: #444;
     color: #eee;
     padding: 0 0 20px 0;
@@ -44,7 +44,7 @@
 }
 
 
-.footer-widget-title {
+#footer-title {
     font-family: 'Lato',sans-serif;
     font-size: 1.6em;
     color: #0eb7ff;
