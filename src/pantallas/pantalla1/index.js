@@ -17,6 +17,7 @@ export class Pantalla1 {
         this.theMail.message == undefined || this.theMail.message == null || this.theMail.message == "") {
             alert("Favor ingresar los datos correspondientes!");
         } else {
+            alert("Gracias! Su mensaje fue enviado correctamente.");
             this.common.postData(this.theMail);
         }
          

@@ -1,6 +1,10 @@
 ﻿<template>
-  <div class="container-fluid">
-      <h3>Quiénes Somos</h3>
+  
+    <nav style="background-color: #ddd; margin-top: -30px; padding: 20px; ">
+        <h2 style="font-family: Lato,sans-serif; font-weight: 300; font-size: 20px; font-weight: bold;">Quiénes Somos</h2>
+        </nav>
+  <div class="container-fluid" style="margin-top: 52px;">
+      
       <div repeat.for="item of info">
         <partners-box img="${item.image}" name="${item.name}" description="${item.description}"></partners-box>
       </div>
