@@ -1,10 +1,10 @@
 <template>
-    <ul repeat.for="person of people">
+    <ul>
         <div class="media row">
-            <img class="align-self-center mr-3 col-sm col-md col-xs img-fluid" src="${person.image}" alt="${person.image}">
+            <img style="max-width: 330px;" class="align-self-center mr-3 col-sm col-md col-xs img-fluid" src="${img}" alt="${img}">
             <div class="media-body col-sm col-md col-xs">
-                <h3 class="mt-0">${person.name}</h3>
-                <p class="mb-0">${person.description}</p>
+                <h3 class="mt-0">${name}</h3>
+                <p class="mb-0">${description}</p>
             </div>
         </div>
         <hr>

@@ -1,6 +1,8 @@
 ﻿<template>
   <div class="container-fluid">
       <h3>Quiénes Somos</h3>
-      <partners-box></partners-box>
+      <div repeat.for="item of info">
+        <partners-box img="${item.image}" name="${item.name}" description="${item.description}"></partners-box>
+      </div>
   </div>
 </template>
