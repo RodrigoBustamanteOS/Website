@@ -1,0 +1,95 @@
+<template>
+    <style>
+        #titleBoxes {
+            margin: 24px 64px;
+        }
+
+        #smallBoxCont {
+            margin: 24px;
+        }
+
+        #titleSuccessCases {
+            text-align: center;
+        }
+
+        #theBenefitsBox {
+            margin: 24px;
+        }
+
+        #image {
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+    </style>
+    <div>
+        <img id="image" src="http://www.createga.org/wp-content/uploads/2014/12/Equipo-750x375.jpg" width="100%" height="450px" alt="">
+        <h2>Servicios</h2>
+        <hr>
+        <div class="row">
+            <section class="smallBoxCont" style="width: 1400px; margin-left: 100px;">
+                <div repeat.for="service of services">
+                    <servicios image="${service.image}" title="${service.title}" description="${service.description}"></servicios>
+                </div>
+            </section>
+        </div>
+        <h2>Casos de éxito</h2>
+        <hr>
+        <div class="row">
+            <section style="width: 1400px; margin-left: 100px;">
+
+                <div class="row">
+                    <div repeat.for="success of successes">
+                        <benefits-box image="${success.image}" title="${success.title}" description="${success.description}">Leer más</benefits-box>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+    <!-- <h3 id="titleBoxes">¿Que hacemos?</h3>
+    <section id="smallBoxCont" class="row">
+       
+      
+        <div class="col-md-4" repeat.for="item of info">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <img src="http://www.merchise.cl/img/IconServicios/DesarrolloSoftware.png" width="50px" height="50px">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h4>Desarrollo de Software</h4>
+                    <p>Desarrollamos diferentes tipos de software con múltiples arquitecturas, lenguajes de programación y tecnologías.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section> -->
+
+    <!-- <section class="smallBoxCont" class="row">
+
+    </section>
+    <div repeat.for="i of info">
+        <servicios image="${i.image}" service="${i.service}" description="${i.description}"></servicios>
+    </div>
+>>>>>>> 25d488c648b1acfe49cef6e313c6f2b23e38fd20
+    <h2 id="titleSuccessCases">Casos de éxito</h2>
+    <div class="row">
+        <div id="theBenefitsBox">
+            <benefits-box img="http://webxms2.azurewebsites.net/wp-content/uploads/2015/05/negocios11.jpg" title="La estabilización y desarrollo de la plataforma Microsoft ha logrado mejorar la ejecución de los procesos críticos del Ministerio de Educación"
+                description="La primera tarea que enfrentó el área de TI frente al escenario descrito, fue generar una nueva visión y alcance que permitiera…">Read more</benefits-box>
+        </div>
+        <div id="theBenefitsBox">
+            <benefits-box img="http://www.xms.cl/wp-content/uploads/2015/08/casos_mine.gif" title="Hyper-V y System Center nos ha permitido tener un óptimo performance y administración del negocio."
+                description="La empresa que ganó la licitación del IPS (Instituto de Previsión Social) de Chile necesitaba hacer un up-grade tecnológico y de infraestructura…">Read more</benefits-box>
+        </div>
+        <div id="theBenefitsBox">
+            <benefits-box img="http://www.xms.cl/wp-content/uploads/2015/08/casos_achs.gif" title="La Asociación Chilena de Seguridad migra a la nube de Microsoft con Windows Azure"
+                description="“Si calculamos costo-beneficio ahora podemos hacer cosas que con las máquinas acá no podíamos, como prender una máquina solo cuando la ocupamos…">Read more</benefits-box>
+        </div>
+    </div> -->
+
+</template>

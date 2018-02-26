@@ -1,4 +1,4 @@
-<template>
+<template bindable="router">
   <div id="footer">
     <div class="container py-5">
       <div class="row">
@@ -6,45 +6,30 @@
           <div class="">
             <h5>Mapa del sitio</h5>
             <ul class="list-unstyled">
-              <li>
-                <a style.bind="white" href="#">Inicio</a>
-              </li>
-              <li>
-                <a style.bind="white" href="#">Clientes</a>
-              </li>
-              <li>
-                <a style.bind="white" href="#">Proyectos</a>
-              </li>
-              <li>
-                <a style.bind="white" href="#">Servicios</a>
-              </li>
-              <li>
-                <a style.bind="white" href="#">Nosotros</a>
-              </li>
-              <li>
-                <a style.bind="white" href="#">Contacto</a>
+              <li repeat.for="nav of router.navigation">
+                <a style.bind="white" href.bind="nav.href">${nav.title}</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-6 col-md">
-          <h5>Información de la Empresa</h5>
+          <h5>Contacto Ormasoft</h5>
           <ul class="list-unstyled text-small">
+
             <li class="text-muted">
               <span>
-                Teléfono: &nbsp;
-                <a style.bind="white" href="tel:+56997795254">+56 (9) 9 779 5254 </a>
-              </span>
-            </li>
-            <li class="text-muted">
-              <span>
-                Dirección: &nbsp;
                 <a style.bind="white" target="_blank" href="https://www.google.cl/maps/place/Av.+Sim%C3%B3n+Bol%C3%ADvar+1840,+%C3%91u%C3%B1oa,+Regi%C3%B3n+Metropolitana/data=!4m2!3m1!1s0x9662cf8f9cfbde71:0xb4978e8ef1197ce4?sa=X&ved=0ahUKEwijn8erjbzZAhWHD5AKHbiaCCgQ8gEIJDAA">
                   Simón Bolívar 1840, Ñuñoa, Santiago de Chile
                 </a>
               </span>
             </li>
+            <li class="text-muted">
+              <span>
+                <a style.bind="white" href="mailto:contacto@ormasoft.cl">contacto@ormasoft.cl</a>
+              </span>
+            </li>
           </ul>
+          <img src="img/logo-ormasoft-grande.png" alt="">
         </div>
       </div>
     </div>

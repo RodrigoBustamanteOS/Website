@@ -1,15 +1,13 @@
-import {bindable} from 'aurelia-framework';
+import { bindable, inject } from 'aurelia-framework';
+import { Router } from 'aurelia-router';
 
+@inject(Router)
 export class Footer {
-  constructor(){
+  constructor(router) {
     this.white = {
       color: 'white'
     }
-  }
-  @bindable value;
-
-  valueChanged(newValue, oldValue) {
-
+    this.router = router;
   }
 }
 

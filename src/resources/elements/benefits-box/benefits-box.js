@@ -2,7 +2,7 @@ import {bindable, bindingMode} from 'aurelia-framework';
 export class BenefitsBox {
     @bindable title = "";
     @bindable description = "";
-    @bindable img = "";
+    @bindable image = "";
     constructor() {
         
     }

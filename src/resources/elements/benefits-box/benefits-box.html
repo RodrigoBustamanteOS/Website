@@ -1,36 +1,45 @@
 <template>
-    <!-- <require from="./medium-box.css"></require> -->
-    <!-- <link rel="stylesheet" href="medium-box.css" type="text/css"> -->
     <style>
         #mediumBoxCont {
             background-color: #DCDCDC;
             width: 400px;
             height: 500px;
+            margin-bottom: 20px;
         }
+
         #imageMD {
             text-align: center;
             width: 100%;
             height: 200px;
         }
+
         #titMD {
             margin: 8px;
         }
+
         #descripMD {
             margin: 16px 8px;
         }
+
         #buttonMD {
             margin: 8px;
             color: #fff;
             background-color: #f23630;
         }
+
+        #card {
+            width: 18rem;
+            margin-bottom: 20px;
+        }
     </style>
-    <section id="mediumBoxCont">
-        <!-- ../img/logo-ormasoft-grande.png  -->
-        <!-- http://webxms2.azurewebsites.net/wp-content/uploads/2015/05/negocios11.jpg -->
-        <img id="imageMD" src="${img}">
-        <h3 id="titMD">${title}</h3>
-        <p id="descripMD">${description}</p>
-        <button class="btn btn-default" id="buttonMD" type="button"><slot></slot></button>
-    </section>
-    
+    <div class="col-4">
+        <div class="card" id="card">
+            <img class="card-img-top" id="imageMD" src="${image}" alt="${image}">
+            <h5 class="card-title" id="titMD">${title}</h5>
+            <p class="card-text" id="descripMD">${description}</p>
+            <button class="btn btn-default" id="buttonMD" type="button">
+                <slot></slot>
+            </button>
+        </div>
+    </div>
 </template>

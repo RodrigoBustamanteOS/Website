@@ -8,6 +8,7 @@ export function configure(config) {
     './elements/solution/solution',
     './elements/change/change',
     './elements/client/client',
-    './elements/footer/footer'
+    './elements/footer/footer',
+    './elements/servicios/servicios'
   );
 }

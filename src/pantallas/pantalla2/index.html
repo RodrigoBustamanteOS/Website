@@ -1,9 +1,8 @@
 ﻿<template>
-  
-  <br>
-  <br>
-  pantalla 2
-  <require from="components/medium-box"></require>
-  
-  <medium-box>Read</medium-box>
+  <div class="container-fluid">
+      <h3>Quiénes Somos</h3>
+      <div repeat.for="item of info">
+        <partners-box img="${item.image}" name="${item.name}" description="${item.description}"></partners-box>
+      </div>
+  </div>
 </template>
